@@ -38,4 +38,85 @@
   force = true
 
 [[redirects]]
-  from
+  from = "/compilation/towels/*"
+  to = "https://towels.netlify.app/:splat"
+  status = 200
+  force = true
+
+# Mountains redirects
+[[redirects]]
+  from = "/compilation/mountains"
+  to = "https://mountainroad.netlify.app/"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/compilation/mountains/*"
+  to = "https://mountainroad.netlify.app/:splat"
+  status = 200
+  force = true
+
+# Parking redirects
+[[redirects]]
+  from = "/compilation/parking"
+  to = "https://parkingstory.netlify.app/"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/compilation/parking/*"
+  to = "https://parkingstory.netlify.app/:splat"
+  status = 200
+  force = true
+
+# Sunflower redirects
+[[redirects]]
+  from = "/compilation/sunflower"
+  to = "https://commonsunflower.netlify.app/"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/compilation/sunflower/*"
+  to = "https://commonsunflower.netlify.app/:splat"
+  status = 200
+  force = true
+
+# Dinner redirects
+[[redirects]]
+  from = "/compilation/dinner"
+  to = "https://dinnertogether.netlify.app/"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/compilation/dinner/*"
+  to = "https://dinnertogether.netlify.app/:splat"
+  status = 200
+  force = true
+
+# Cellar redirects
+[[redirects]]
+  from = "/compilation/cellar"
+  to = "https://likeness.netlify.app/"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/compilation/cellar/*"
+  to = "https://likeness.netlify.app/:splat"
+  status = 200
+  force = true
+
+# Ice/Orange redirects
+[[redirects]]
+  from = "/compilation/ice-orange"
+  to = "https://ice-orange.netlify.app/"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/compilation/ice-orange/*"
+  to = "https://ice-orange.netlify.app/:splat"
+  status = 200
+  force = true
