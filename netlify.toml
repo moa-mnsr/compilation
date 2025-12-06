@@ -4,10 +4,23 @@
   to = "/"
   status = 301
 
-# Proxy each poem to its separate Netlify site
+# Dirt redirects
+[[redirects]]
+  from = "/compilation/dirt"
+  to = "https://dirt-fought.netlify.app/"
+  status = 200
+  force = true
+
 [[redirects]]
   from = "/compilation/dirt/*"
   to = "https://dirt-fought.netlify.app/:splat"
+  status = 200
+  force = true
+
+# Tooth redirects
+[[redirects]]
+  from = "/compilation/tooth"
+  to = "https://tooth-lost.netlify.app/"
   status = 200
   force = true
 
@@ -17,44 +30,12 @@
   status = 200
   force = true
 
+# Towels redirects
 [[redirects]]
-  from = "/compilation/towels/*"
-  to = "https://towels.netlify.app/:splat"
+  from = "/compilation/towels"
+  to = "https://towels.netlify.app/"
   status = 200
   force = true
 
 [[redirects]]
-  from = "/compilation/mountains/*"
-  to = "https://mountainroad.netlify.app/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/compilation/parking/*"
-  to = "https://parkingstory.netlify.app/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/compilation/sunflower/*"
-  to = "https://commonsunflower.netlify.app/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/compilation/dinner/*"
-  to = "https://dinnertogether.netlify.app/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/compilation/cellar/*"
-  to = "https://likeness.netlify.app/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/compilation/ice-orange/*"
-  to = "https://ice-orange.netlify.app/:splat"
-  status = 200
-  force = true
+  from
