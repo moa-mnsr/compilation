@@ -1,0 +1,88 @@
+@import 'reset.css';
+
+@font-face {
+  font-family: 'Otto';
+  src: url('fonts/ABCOtto-Regular-Trial.otf') format('opentype'),
+        url('fonts/ABCOtto-Regular-Trial.woff') format('woff'),
+        url('fonts/ABCOtto-Regular-Trial.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+}
+
+@font-face {
+  font-family: 'Otto'; /* Italic */
+  src: url('fonts/ABCOtto-RegularItalic-Trial.otf') format('opentype'), /* Path to your italic font file */
+       url('fonts/ABCOtto-RegularItalic-Trial.woff') format('woff'),
+       url('fonts/ABCOtto-RegularItalic-Trial.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100dvh;
+  user-select: none;
+  -webkit-user-select: none;
+  font-family: 'Otto', serif;
+}
+
+header, footer {
+  font-style: italic;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5dvw;
+  width: 80dvw;
+  height: 80dvh;
+  margin: 2em auto;
+}
+
+.grid-item {
+text-align: left;
+  background: mistyrose;
+  padding: 2em;
+  border: 1px solid black;
+  cursor: pointer;
+  font-style: normal;
+
+}
+
+/* Reordering on Resize */
+@media (max-width: 1200px) {
+  .grid-container { grid-template-columns: repeat(2, 1fr); }
+  .grid-item:nth-child(1) { order: 1; }
+  .grid-item:nth-child(2) { order: 2; }
+  .grid-item:nth-child(3) { order: 3; }
+  .grid-item:nth-child(4) { order: 4; }
+}
+
+@media (max-width: 900px) {
+  .grid-container { grid-template-columns: repeat(2, 1fr); }
+  .grid-item:nth-child(1) { order: 2; }
+  .grid-item:nth-child(2) { order: 1; }
+  .grid-item:nth-child(3) { order: 4; }
+  .grid-item:nth-child(4) { order: 3; }
+}
+
+@media (max-width: 600px) {
+  .grid-item { 
+        padding: 2em 4em; 
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+  }
+  .grid-container { grid-template-columns: 1fr; }
+  .grid-item:nth-child(1) { order: 4; }
+  .grid-item:nth-child(2) { order: 3; }
+  .grid-item:nth-child(3) { order: 1; }
+  .grid-item:nth-child(4) { order: 2; }
+}
+
+
