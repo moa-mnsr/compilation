@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+@import url(reset.css);
+
+
+
+body {
+    background-color: #F7F7F7;
+    font-family: "Archivo", sans-serif;
+    color: #262626;
+    overflow-x: hidden;
+}    
+
+
+main {
+    width: 100vw;
+    display: flex;
+}
+
+section {
+    display: flex;
+
+
+}
+
+section.panel-1 {
+    width: 40vw;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+
+
+}
+
+div.nav-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    line-height: 1;
+    font-size: 2vw;
+}
+
+
+nav a {
+    text-decoration: none;
+    /* border-bottom: 2px solid; */
+    padding-bottom: 2px;
+
+}
+
+
+
+nav a.you-are-here {
+    color: #262626;
+    /* border-bottom: 2px solid #F7F7F7; */
+
+}
+
+nav a.poem-page {
+    text-decoration: none;
+    color: #8490ad;
+    width: fit-content;
+
+}
+
+
+section.panel-2 {
+    /* border-left: solid 2px #262626;*/
+    overflow-y: scroll;
+    /*width: 77vw;*/
+    display: flex;
+    justify-content: center;
+    padding-top: 50vh;
+}
+
+
+
+div.stanza {
+    margin-bottom: 35vh;
+    line-height: 1.2;
+}
+
+div.line {
+    font-size: 5vw;
+}
+    
+
+@media screen and (max-width: 500px) {
+    main {
+          display: block;
+    }
+
+
+section.panel-1 {
+    width: 100vw;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+
+nav {
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2.5vw;
+}
+ nav a {
+    padding: 1em;
+ }
+
+ div.line {
+    font-size: 7vw;
+}
+}
+

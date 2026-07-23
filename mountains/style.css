@@ -1,0 +1,46 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.stone {
+    color: gray;
+}
+
+div.tree {
+    color: forestgreen;
+}
+
+div.flower {
+    color: orchid;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+section {
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em;
+}
+
+/*
+@media screen and (max-width: 480px) {
+    body {
+        height: auto;
+        flex-direction: row;
+    }
+    main {
+        flex-direction: column;
+    }
+}/*
