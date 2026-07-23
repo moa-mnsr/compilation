@@ -1,0 +1,35 @@
+@import 'reset.css';
+
+html {
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; /* Safari */
+  -moz-text-size-adjust: 100%; /* Firefox */
+}
+
+html, body {
+  overflow: hidden;
+}
+
+body {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  background-color: beige;
+  user-select: none;
+  -webkit-user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100dvh;
+  -mosz-user-select: none;
+  -ms-user-select: none;
+}
+
+section {
+    border: solid black 1px;
+    margin: 1em 2em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 40dvh;
+    text-align: center;
+}
