@@ -1,0 +1,75 @@
+@import url(assets/reset.css);
+  
+body {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: .03em;
+    line-height: 1.4;
+    position: relative;
+}
+
+div.container {
+    display: grid;
+    grid: auto-flow / 1fr 1fr 1fr;
+    margin-left: 1em;
+    margin-bottom: 10em;
+}
+
+div.text {
+    border-left: solid 1px black;
+    margin: 2em;
+    padding: 2em;
+}
+
+div.number, div.star {
+    display: flex;
+    justify-content: flex-start;
+    font-size: small;
+}
+  
+div.number {
+    font-weight: 600;
+    
+}
+
+p.citat {
+    font-style: italic;
+}
+
+span {
+    font-style: normal;
+}
+
+embed {
+    width: 25vw;
+    padding: 1em;
+}
+
+aside {
+    color: blue;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+   /* border: solid 1px blue;
+    padding: 0 5px;*/
+    text-align: center;
+}
+
+aside:hover {
+       border-bottom: solid 1px blue;
+
+}
+
+aside::link { color: #0000EE; }
+
+aside:visited { color: #551A8B; }
+
+aside:link:active, :visited:active { color: #FF0000; }
+
+@media only screen and (max-width: 800px) {
+    div.container {
+        grid: auto-flow / 1fr 1fr;
+    }
+}
