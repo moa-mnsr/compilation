@@ -50,17 +50,14 @@ embed {
 aside {
     color: blue;
     position: absolute;
-    bottom: 1px;
-    right: 1px;
+    bottom: 1rem;
+    right: 1rem;
    /* border: solid 1px blue;
     padding: 0 5px;*/
     text-align: center;
+    font-size: 3rem;
 }
 
-aside:hover {
-       border-bottom: solid 1px blue;
-
-}
 
 aside::link { color: #0000EE; }
 
